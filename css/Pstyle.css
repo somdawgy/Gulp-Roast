@@ -135,6 +135,7 @@ a:hover{
   color: #D98555;
 }
 
+
 @media (min-width: 834px){
   .logo{
     width: 200px;
@@ -148,17 +149,14 @@ nav li{
     padding-bottom: 0;
 }
 article img{
-  display:flex;
-  flex-direction: column;
-}
-article p{
-  display: flex;
-  flex-direction: column;
+  width: 303px;
+  height: 200px;
 }
 .content{
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 303px 419px;
+  grid-template-rows: 304px 304px 304px;
+  gap: 50px;
 }
 }
 
@@ -180,8 +178,13 @@ nav li{
   margin: 36px;
   padding-bottom: 0;
 }
+article img{
+  width: 384px;
+  height: 245px;
+}
 .content{
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 384px 384px 384px;
+  grid-template-rows: 245px 245px;
+  gap: 16px;
 }
 }

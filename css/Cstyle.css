@@ -150,3 +150,27 @@ a:hover{
       height: 321px;
     }
 }
+
+@media (min-width: 1280px){
+  .logo{
+    width: 232px;
+    margin: 16px;
+}
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu ul{
+  margin: 91px 16px 0px 16px;
+  justify-content: flex-end;
+}
+nav li{
+  margin: 36px;
+  padding-bottom: 0;
+}
+ div img{
+  width: 592px;
+  height: 446px;
+ }
+}
