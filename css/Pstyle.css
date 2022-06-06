@@ -182,9 +182,12 @@ article img{
   width: 384px;
   height: 245px;
 }
+h2{
+  font-weight: 700;
+  font-size: 26.4px;
+}
 .content{
-  grid-template-columns: 384px 384px 384px;
-  grid-template-rows: 245px 245px;
-  gap: 16px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 }
