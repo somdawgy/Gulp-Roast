@@ -10,10 +10,6 @@ body{
   padding: 5px;
 }
 
-body .fimage{
-display: flex;
-max-width: content-box;
-}
 
 header{
   background-color: #082B59;
@@ -81,12 +77,14 @@ article p{
 article img{
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  margin: 34px;
+  align-items:flex-start;
+  align-self: stretch;
   padding: 0px;
   gap: 10px;
-  
-  width: 327px;
+  width: 279px;
   height: 200px;
+  border-radius: 10px;
   margin: 24px;
 }
 
@@ -149,8 +147,41 @@ nav li{
     margin: 20px;
     padding-bottom: 0;
 }
-div{
+article img{
+  display:flex;
+  flex-direction: column;
+}
+article p{
+  display: flex;
+  flex-direction: column;
+}
+.content{
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
 }
 
+@media (min-width: 1280px){
+  .logo{
+    width: 232px;
+    margin: 16px;
+}
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu ul{
+  margin: 91px 16px 0px 16px;
+  justify-content: flex-end;
+}
+nav li{
+  margin: 36px;
+  padding-bottom: 0;
+}
+.content{
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
 }

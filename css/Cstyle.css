@@ -10,11 +10,6 @@ body{
   padding: 5px;
 }
 
-body .fimage{
-display: flex;
-object-fit: cover;
-}
-
 header{
   background-color: #082B59;
   border: 10px solid #D98555;
