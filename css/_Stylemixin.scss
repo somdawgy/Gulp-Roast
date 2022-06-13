@@ -1,0 +1,32 @@
+//mixins
+@mixin bordBox {
+    width: $widPerc;
+    border: solid $boundColor $tenDim;
+    padding: $mainSpace + 1;
+}
+
+@mixin Thead {
+    background-color: $blueColor;
+    border: $tenDim solid $orangeColor;
+}
+
+@mixin Font($Fontfam, $FontStyle, $FontWeight, $FontSize, $lineHigh) {
+    font-family: $Fontfam;
+    font-style: $FontStyle;
+    font-weight: $FontWeight;
+    font-size: $FontSize;
+    line-height: $lineHigh;
+}
+
+@mixin ButtN {
+    background-color: $brownColor;
+    display: var(--dispFlex);
+    flex-direction: var(--Rowflex);
+    justify-content: var(--centJust);
+    align-items: var(--centJust);
+    padding: $mainSpace * 2, $mainSpace * 4;
+    gap: $tenDim;
+    width: $mainDim - 74;
+    height: $mainDim - 145;
+    border-radius: $tenDim - 3;
+}

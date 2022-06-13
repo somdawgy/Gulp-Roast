@@ -1,0 +1,42 @@
+@media (min-width: 834px) {
+
+    //redefined variables
+    $widPerc: 100%;
+    $mainDim: 200px;
+    $mainSpace: 4px;
+    $tenDim: 10px;
+    $zeroSpace: 0;
+
+    .logo {
+        width: $mainDim;
+    }
+
+    .menu ul {
+        flex-direction: var(--Rowflex);
+        justify-content: var(--centJust);
+    }
+
+    nav li {
+        margin: $mainSpace * 5;
+        padding-bottom: $zeroSpace;
+    }
+
+    section {
+        margin: $mainSpace * 8;
+        display: var(--dispFlex);
+        flex-direction: var(--Rowflex);
+        justify-content: var(--centJust);
+    }
+
+    article {
+        margin: $tenDim;
+    }
+
+    picture .image {
+        margin-top: $mainDim - 48.5;
+        gap: $tenDim;
+        border-radius: $tenDim;
+        width: $mainDim + 69;
+        height: $mainDim + 236;
+    }
+}

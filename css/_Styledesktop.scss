@@ -1,0 +1,36 @@
+@media (min-width: 1280px) {
+
+    //redefined variables
+    $widPerc: 100%;
+    $mainDim: 200px;
+    $mainSpace: 4px;
+    $tenDim: 10px;
+    $zeroSpace: 0;
+
+    .logo {
+        width: $mainDim + 32;
+        margin: $mainSpace * 4;
+    }
+
+    header {
+        display: var(--dispFlex);
+        flex-direction: var(--Rowflex);
+        justify-content: var(--spaceJust);
+    }
+
+    .menu ul {
+        margin: 91px $mainSpace * 4 $zeroSpace $mainSpace * 4;
+        justify-content: var(--endJust);
+    }
+
+    nav li {
+        margin: $mainSpace * 9;
+        padding-bottom: $zeroSpace;
+    }
+
+    picture .image {
+        margin: 139.4px 77.76px 139.4px 0px;
+        width: $mainDim + 300;
+        height: $mainDim + 158;
+    }
+}
