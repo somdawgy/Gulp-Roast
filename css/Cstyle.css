@@ -27,24 +27,24 @@ header {
   background-color: #082B59;
   border: 10px solid #D98555;
   border-style: none none solid none;
-  border-style: none none solid none;
 }
-
-.logo {
+header .logo {
   display: var(--dispBlock);
   margin: 0 auto;
   width: 194px;
 }
-
-.menu ul {
+header ul {
   display: var(--dispFlex);
   flex-direction: column;
   align-items: var(--centJust);
   row-gap: 26px;
   list-style-type: none;
 }
-
-.menu ul a {
+header ul li {
+  font-size: 18px;
+  padding-bottom: 36px;
+}
+header ul li a {
   color: #f2f2f2;
   text-decoration: none;
   font-family: "Lato";
@@ -53,21 +53,14 @@ header {
   font-size: 24px;
   line-height: 58px;
 }
-
-.menu ul a:hover {
+header ul li a:hover {
   color: #D98555;
-}
-
-nav li {
-  font-size: 18px;
-  padding-bottom: 36px;
 }
 
 article {
   margin: 24px;
 }
-
-h1 {
+article h1 {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
@@ -75,7 +68,6 @@ h1 {
   line-height: 80px;
   margin-top: 12px;
 }
-
 article p {
   font-family: "Lato";
   font-style: normal;
@@ -84,9 +76,11 @@ article p {
   line-height: 38px;
   margin: 24px;
 }
-
-.phone {
+article .phone {
   color: #59331D;
+}
+article .phone:hover {
+  color: #D98555;
 }
 
 div img {
@@ -107,8 +101,7 @@ footer {
   padding: 0;
   gap: 10px;
 }
-
-.p1 {
+footer .p1 {
   color: #f2f2f2;
   text-align: var(--centJust);
   font-family: "Lato";
@@ -118,8 +111,7 @@ footer {
   line-height: 38px;
   margin: 5px;
 }
-
-.p2 {
+footer .p2 {
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
@@ -129,7 +121,6 @@ footer {
   color: white;
   margin: 5px;
 }
-
 footer nav ul {
   display: var(--dispFlex);
   flex-direction: var(--Rowflex);
@@ -137,18 +128,15 @@ footer nav ul {
   list-style-type: none;
   padding: 16px;
 }
-
-footer nav ul a {
-  color: #f2f2f2;
-  text-decoration: none;
-}
-
-footer nav li {
+footer nav ul li {
   color: #f2f2f2;
   margin: 16px;
 }
-
-a:hover {
+footer nav ul li a {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+footer nav ul li a:hover {
   color: #D98555;
 }
 

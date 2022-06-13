@@ -3,114 +3,116 @@ body {
     font-family: $mainFont;
     box-sizing: content-box;
     @include bordBox();
-}
 
-header {
-    @include Thead();
-    border-style: none none solid none;
-    border-style: none none solid none;
-}
-
-.logo {
-    display: var(--dispBlock);
-    margin: $zeroSpace auto;
-    width: $mainDim - 6;
-}
-
-.menu ul {
-    display: var(--dispFlex);
-    flex-direction: column;
-    align-items: var(--centJust);
-    row-gap: ($mainSpace*6) + 2;
-    list-style-type: none;
-}
-
-.menu ul a {
-    color: $secondWhite;
-    text-decoration: none;
-    @include Font($mainFont, $mainFstyle, $mainFweight, $mainFsize + 4, $lineHeight + 18);
-}
-
-.menu ul a:hover {
-    color: $orangeColor;
-}
-
-nav li {
-    font-size: $mainFsize - 2;
-    padding-bottom: $mainSpace * 9;
-}
+    header {
+        @include Thead();
+        border-style: none none solid none;
+        border-style: none none solid none;
 
 
-article {
-    margin: $mainSpace * 6;
-}
+        .logo {
+            display: var(--dispBlock);
+            margin: $zeroSpace auto;
+            width: $mainDim - 6;
+        }
 
-h1 {
-    @include Font($headFont, $mainFstyle, $mainFweight + 300, $mainFsize * 2, $lineHeight * 2);
-    margin-top: $mainSpace * 3;
-}
-
-h2 {
-    @include Font($headFont, $mainFstyle, $mainFweight + 300, $mainFsize - 0.8, $lineHeight - 2);
-    margin: $mainSpace * 6;
-}
-
-article p {
-    @include Font($mainFont, $mainFstyle, $mainFweight, $mainFsize - 0.8, $lineHeight - 2);
-    margin: $mainSpace * 6;
-}
-
-article img {
-    display: var(--dispFlex);
-    flex-direction: var(--ColFlex);
-    align-items: var(--startJust);
-    align-self: var(--stretch);
-    padding: $zeroSpace;
-    border-radius: $tenDim;
-    @include Spacing ($mainSpace * 6, $tenDim, $mainDim +79, $mainDim);
-}
+        ul {
+            display: var(--dispFlex);
+            flex-direction: column;
+            align-items: var(--centJust);
+            row-gap: ($mainSpace*6) + 2;
+            list-style-type: none;
 
 
-footer {
-    background-color: $blueColor;
-    display: var(--dispFlex);
-    flex-direction: var(--ColFlex);
-    padding: $zeroSpace;
-    gap: $tenDim;
-}
+            li {
+                font-size: $mainFsize - 2;
+                padding-bottom: $mainSpace * 9;
 
-.p1 {
-    color: $secondWhite;
-    text-align: var(--centJust);
-    @include Font($mainFont, $mainFstyle, $mainFweight, $mainFsize - 0.8, $lineHeight - 2);
-    margin: $mainSpace + 1;
-}
 
-.p2 {
-    @include Font($mainFont, $mainFstyle, $mainFweight, $mainFsize - 4, $lineHeight - 2);
-    text-align: var(--centJust);
-    color: $backColor;
-    margin: $mainSpace + 1;
-}
+                a {
+                    color: $secondWhite;
+                    text-decoration: none;
+                    @include Font($mainFont, $mainFstyle, $mainFweight, $mainFsize + 4, $lineHeight + 18);
 
-footer nav ul {
-    display: var(--dispFlex);
-    flex-direction: var(--Rowflex);
-    justify-content: var(--centJust);
-    list-style-type: none;
-    padding: $mainSpace*4;
-}
+                    &:hover {
+                        color: $orangeColor;
+                    }
+                }
+            }
+        }
+    }
 
-footer nav ul a {
-    color: $secondWhite;
-    text-decoration: none;
-}
 
-footer nav li {
-    color: $secondWhite;
-    margin: $mainSpace*4;
-}
+    article {
+        margin: $mainSpace * 6;
 
-a:hover {
-    color: $orangeColor;
+        h1 {
+            @include Font($headFont, $mainFstyle, $mainFweight + 300, $mainFsize * 2, $lineHeight * 2);
+            margin-top: $mainSpace * 3;
+        }
+
+        h2 {
+            @include Font($headFont, $mainFstyle, $mainFweight + 300, $mainFsize - 0.8, $lineHeight - 2);
+            margin: $mainSpace * 6;
+        }
+
+        p {
+            @include Font($mainFont, $mainFstyle, $mainFweight, $mainFsize - 0.8, $lineHeight - 2);
+            margin: $mainSpace * 6;
+        }
+
+        img {
+            display: var(--dispFlex);
+            flex-direction: var(--ColFlex);
+            align-items: var(--startJust);
+            align-self: var(--stretch);
+            padding: $zeroSpace;
+            border-radius: $tenDim;
+            @include Spacing ($mainSpace * 6, $tenDim, $mainDim +79, $mainDim);
+        }
+    }
+
+    footer {
+        background-color: $blueColor;
+        display: var(--dispFlex);
+        flex-direction: var(--ColFlex);
+        padding: $zeroSpace;
+        gap: $tenDim;
+
+        .p1 {
+            color: $secondWhite;
+            text-align: var(--centJust);
+            @include Font($mainFont, $mainFstyle, $mainFweight, $mainFsize - 0.8, $lineHeight - 2);
+            margin: $mainSpace + 1;
+        }
+
+        .p2 {
+            @include Font($mainFont, $mainFstyle, $mainFweight, $mainFsize - 4, $lineHeight - 2);
+            text-align: var(--centJust);
+            color: $backColor;
+            margin: $mainSpace + 1;
+        }
+
+        nav ul {
+            display: var(--dispFlex);
+            flex-direction: var(--Rowflex);
+            justify-content: var(--centJust);
+            list-style-type: none;
+            padding: $mainSpace*4;
+
+            li {
+                color: $secondWhite;
+                margin: $mainSpace*4;
+
+                a {
+                    color: $secondWhite;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: $orangeColor;
+                    }
+                }
+            }
+        }
+    }
 }

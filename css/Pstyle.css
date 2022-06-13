@@ -22,29 +22,29 @@ body {
   border: solid #5B6DCD 10px;
   padding: 5px;
 }
-
-header {
+body header {
   background-color: #082B59;
   border: 10px solid #D98555;
   border-style: none none solid none;
   border-style: none none solid none;
 }
-
-.logo {
+body header .logo {
   display: var(--dispBlock);
   margin: 0 auto;
   width: 194px;
 }
-
-.menu ul {
+body header ul {
   display: var(--dispFlex);
   flex-direction: column;
   align-items: var(--centJust);
   row-gap: 26px;
   list-style-type: none;
 }
-
-.menu ul a {
+body header ul li {
+  font-size: 18px;
+  padding-bottom: 36px;
+}
+body header ul li a {
   color: #f2f2f2;
   text-decoration: none;
   font-family: "Lato";
@@ -53,21 +53,13 @@ header {
   font-size: 24px;
   line-height: 58px;
 }
-
-.menu ul a:hover {
+body header ul li a:hover {
   color: #D98555;
 }
-
-nav li {
-  font-size: 18px;
-  padding-bottom: 36px;
-}
-
-article {
+body article {
   margin: 24px;
 }
-
-h1 {
+body article h1 {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
@@ -75,8 +67,7 @@ h1 {
   line-height: 80px;
   margin-top: 12px;
 }
-
-h2 {
+body article h2 {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
@@ -84,8 +75,7 @@ h2 {
   line-height: 38px;
   margin: 24px;
 }
-
-article p {
+body article p {
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
@@ -93,8 +83,7 @@ article p {
   line-height: 38px;
   margin: 24px;
 }
-
-article img {
+body article img {
   display: var(--dispFlex);
   flex-direction: var(--ColFlex);
   align-items: var(--startJust);
@@ -106,16 +95,14 @@ article img {
   width: 279px;
   height: 200px;
 }
-
-footer {
+body footer {
   background-color: #082B59;
   display: var(--dispFlex);
   flex-direction: var(--ColFlex);
   padding: 0;
   gap: 10px;
 }
-
-.p1 {
+body footer .p1 {
   color: #f2f2f2;
   text-align: var(--centJust);
   font-family: "Lato";
@@ -125,8 +112,7 @@ footer {
   line-height: 38px;
   margin: 5px;
 }
-
-.p2 {
+body footer .p2 {
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
@@ -136,26 +122,22 @@ footer {
   color: white;
   margin: 5px;
 }
-
-footer nav ul {
+body footer nav ul {
   display: var(--dispFlex);
   flex-direction: var(--Rowflex);
   justify-content: var(--centJust);
   list-style-type: none;
   padding: 16px;
 }
-
-footer nav ul a {
-  color: #f2f2f2;
-  text-decoration: none;
-}
-
-footer nav li {
+body footer nav ul li {
   color: #f2f2f2;
   margin: 16px;
 }
-
-a:hover {
+body footer nav ul li a {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+body footer nav ul li a:hover {
   color: #D98555;
 }
 

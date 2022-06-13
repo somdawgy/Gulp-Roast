@@ -20,28 +20,28 @@ body {
   border: solid #5B6DCD 10px;
   padding: 5px;
 }
-
-header {
+body header {
   background-color: #082B59;
   border: 10px solid #D98555;
   border-style: none none solid none;
 }
-
-.logo {
+body header .logo {
   display: var(--dispBlock);
   margin: 0 auto;
   width: 194px;
 }
-
-.menu ul {
+body header ul {
   display: var(--dispFlex);
   flex-direction: column;
   align-items: var(--centJust);
   row-gap: 26px;
   list-style-type: none;
 }
-
-.menu ul a {
+body header ul li {
+  font-size: 18px;
+  padding-bottom: 36px;
+}
+body header ul li a {
   color: #f2f2f2;
   text-decoration: none;
   font-family: "Lato";
@@ -50,41 +50,33 @@ header {
   font-size: 24px;
   line-height: 58px;
 }
-
-.menu ul a:hover {
+body header ul li a:hover {
   color: #D98555;
 }
-
-nav li {
-  font-size: 18px;
-  padding-bottom: 36px;
-}
-
-article {
+body article {
   margin: 24px;
 }
-
-h1 {
+body article h1 {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 80px;
 }
-
-article p {
+body article p {
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
   font-size: 19.2px;
   line-height: 38px;
 }
-
-.SFO {
+body article .SFO {
   color: #59331D;
 }
-
-.button {
+body article .SFO:hover {
+  color: #D98555;
+}
+body article .button {
   background-color: #59331D;
   display: var(--dispFlex);
   flex-direction: var(--Rowflex);
@@ -96,15 +88,16 @@ article p {
   height: 55px;
   border-radius: 7px;
 }
-
-.button a {
+body article .button a {
   color: #f2f2f2;
   text-decoration: none;
   font-weight: 400;
   font-size: 19.2px;
 }
-
-picture .image {
+body article .button a:hover {
+  color: #D98555;
+}
+body picture .image {
   display: var(--dispFlex);
   flex-direction: var(--ColFlex);
   margin: 24px;
@@ -116,16 +109,14 @@ picture .image {
   height: 200px;
   border-radius: 10px;
 }
-
-footer {
+body footer {
   background-color: #082B59;
   display: var(--dispFlex);
   flex-direction: var(--ColFlex);
   padding: 0;
   gap: 10px;
 }
-
-.p1 {
+body footer .p1 {
   color: #f2f2f2;
   text-align: var(--centJust);
   font-family: "Lato";
@@ -135,8 +126,7 @@ footer {
   line-height: 38px;
   margin: 5px;
 }
-
-.p2 {
+body footer .p2 {
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
@@ -146,26 +136,22 @@ footer {
   color: white;
   margin: 5px;
 }
-
-footer nav ul {
+body footer nav ul {
   display: var(--dispFlex);
   flex-direction: var(--Rowflex);
   justify-content: var(--centJust);
   list-style-type: none;
   padding: 16px;
 }
-
-footer nav ul a {
-  color: #f2f2f2;
-  text-decoration: none;
-}
-
-footer nav li {
+body footer nav ul li {
   color: #f2f2f2;
   margin: 16px;
 }
-
-a:hover {
+body footer nav ul li a {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+body footer nav ul li a:hover {
   color: #D98555;
 }
 

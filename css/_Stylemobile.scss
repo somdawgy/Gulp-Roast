@@ -3,124 +3,136 @@ body {
     font-family: $mainFont;
     box-sizing: content-box;
     @include bordBox();
-}
-
-header {
-    @include Thead();
-    border-style: none none solid none;
-}
-
-.logo {
-    display: var(--dispBlock);
-    margin: $zeroSpace auto;
-    width: $mainDim - 6;
-}
-
-.menu ul {
-    display: var(--dispFlex);
-    flex-direction: column;
-    align-items: var(--centJust);
-    row-gap: ($mainSpace*6) + 2;
-    list-style-type: none;
-}
-
-.menu ul a {
-    color: $secondWhite;
-    text-decoration: none;
-    @include Font($mainFont, $mainFstyle, $mainFweight, $mainFsize + 4, $lineHeight + 18);
-}
-
-.menu ul a:hover {
-    color: $orangeColor;
-}
-
-nav li {
-    font-size: $mainFsize - 2;
-    padding-bottom: $mainSpace * 9;
-}
-
-article {
-    margin: $mainSpace * 6;
-}
-
-h1 {
-    @include Font($headFont, $mainFstyle, $mainFweight + 300, $mainFsize * 2, $lineHeight * 2);
-}
 
 
-article p {
-    @include Font($mainFont, $mainFstyle, $mainFweight, $mainFsize - 0.8, $lineHeight - 2);
-}
-
-.SFO {
-    color: $brownColor;
-}
-
-.button {
-    @include ButtN();
-}
-
-.button a {
-    color: $secondWhite;
-    text-decoration: none;
-    font-weight: $mainFweight;
-    font-size: $mainFsize - 0.8;
-}
-
-picture .image {
-    display: var(--dispFlex);
-    flex-direction: var(--ColFlex);
-    margin: $mainSpace * 6;
-    align-items: var(--startJust);
-    align-self: var(--stretch);
-    padding: $zeroSpace;
-    gap: $tenDim;
-    width: $mainDim + 127;
-    height: $mainDim;
-    border-radius: $tenDim;
-}
+    header {
+        @include Thead();
+        border-style: none none solid none;
 
 
-footer {
-    background-color: $blueColor;
-    display: var(--dispFlex);
-    flex-direction: var(--ColFlex);
-    padding: $zeroSpace;
-    gap: $tenDim;
-}
+        .logo {
+            display: var(--dispBlock);
+            margin: $zeroSpace auto;
+            width: $mainDim - 6;
+        }
 
-.p1 {
-    color: $secondWhite;
-    text-align: var(--centJust);
-    @include Font($mainFont, $mainFstyle, $mainFweight, $mainFsize - 0.8, $lineHeight - 2);
-    margin: $mainSpace + 1;
-}
+        ul {
+            display: var(--dispFlex);
+            flex-direction: column;
+            align-items: var(--centJust);
+            row-gap: ($mainSpace*6) + 2;
+            list-style-type: none;
 
-.p2 {
-    @include Font($mainFont, $mainFstyle, $mainFweight, $mainFsize - 4, $lineHeight - 2);
-    text-align: var(--centJust);
-    color: $backColor;
-    margin: $mainSpace + 1;
-}
 
-footer nav ul {
-    display: var(--dispFlex);
-    flex-direction: var(--Rowflex);
-    justify-content: var(--centJust);
-    list-style-type: none;
-    padding: $mainSpace*4;
-}
+            li {
+                font-size: $mainFsize - 2;
+                padding-bottom: $mainSpace * 9;
 
-footer nav ul a {
-    color: $secondWhite;
-    text-decoration: none;
-}
 
-footer nav li {
-    color: $secondWhite;
-    margin: $mainSpace*4;
-}
+                a {
+                    color: $secondWhite;
+                    text-decoration: none;
+                    @include Font($mainFont, $mainFstyle, $mainFweight, $mainFsize + 4, $lineHeight + 18);
 
-a:hover {
-    color: $orangeColor;
+                    &:hover {
+                        color: $orangeColor;
+                    }
+                }
+            }
+        }
+    }
+
+
+    article {
+        margin: $mainSpace * 6;
+
+        h1 {
+            @include Font($headFont, $mainFstyle, $mainFweight + 300, $mainFsize * 2, $lineHeight * 2);
+        }
+
+        p {
+            @include Font($mainFont, $mainFstyle, $mainFweight, $mainFsize - 0.8, $lineHeight - 2);
+        }
+
+        .SFO {
+            color: $brownColor;
+
+            &:hover {
+                color: $orangeColor;
+            }
+        }
+
+        .button {
+            @include ButtN();
+
+            a {
+                color: $secondWhite;
+                text-decoration: none;
+                font-weight: $mainFweight;
+                font-size: $mainFsize - 0.8;
+
+                &:hover {
+                    color: $orangeColor;
+                }
+            }
+        }
+    }
+
+    picture .image {
+        display: var(--dispFlex);
+        flex-direction: var(--ColFlex);
+        margin: $mainSpace * 6;
+        align-items: var(--startJust);
+        align-self: var(--stretch);
+        padding: $zeroSpace;
+        gap: $tenDim;
+        width: $mainDim + 127;
+        height: $mainDim;
+        border-radius: $tenDim;
+    }
+
+
+    footer {
+        background-color: $blueColor;
+        display: var(--dispFlex);
+        flex-direction: var(--ColFlex);
+        padding: $zeroSpace;
+        gap: $tenDim;
+
+        .p1 {
+            color: $secondWhite;
+            text-align: var(--centJust);
+            @include Font($mainFont, $mainFstyle, $mainFweight, $mainFsize - 0.8, $lineHeight - 2);
+            margin: $mainSpace + 1;
+        }
+
+        .p2 {
+            @include Font($mainFont, $mainFstyle, $mainFweight, $mainFsize - 4, $lineHeight - 2);
+            text-align: var(--centJust);
+            color: $backColor;
+            margin: $mainSpace + 1;
+        }
+
+        nav ul {
+            display: var(--dispFlex);
+            flex-direction: var(--Rowflex);
+            justify-content: var(--centJust);
+            list-style-type: none;
+            padding: $mainSpace*4;
+
+            li {
+                color: $secondWhite;
+                margin: $mainSpace*4;
+
+                a {
+                    color: $secondWhite;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: $orangeColor;
+                    }
+                }
+            }
+        }
+    }
 }
