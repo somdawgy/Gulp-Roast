@@ -20,28 +20,29 @@ body {
   border: solid #5B6DCD 10px;
   padding: 5px;
 }
-body header {
+
+header {
   background-color: #082B59;
   border: 10px solid #D98555;
   border-style: none none solid none;
 }
-body header .logo {
+header .logo {
   display: var(--dispBlock);
   margin: 0 auto;
   width: 194px;
 }
-body header ul {
+header ul {
   display: var(--dispFlex);
   flex-direction: column;
   align-items: var(--centJust);
   row-gap: 26px;
   list-style-type: none;
 }
-body header ul li {
+header ul li {
   font-size: 18px;
   padding-bottom: 36px;
 }
-body header ul li a {
+header ul li a {
   color: #f2f2f2;
   text-decoration: none;
   font-family: "Lato";
@@ -50,33 +51,34 @@ body header ul li a {
   font-size: 24px;
   line-height: 58px;
 }
-body header ul li a:hover {
+header ul li a:hover {
   color: #D98555;
 }
-body article {
+
+article {
   margin: 24px;
 }
-body article h1 {
+article h1 {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 80px;
 }
-body article p {
+article p {
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
   font-size: 19.2px;
   line-height: 38px;
 }
-body article .SFO {
+article .SFO {
   color: #59331D;
 }
-body article .SFO:hover {
+article .SFO:hover {
   color: #D98555;
 }
-body article .button {
+article .button {
   background-color: #59331D;
   display: var(--dispFlex);
   flex-direction: var(--Rowflex);
@@ -88,16 +90,17 @@ body article .button {
   height: 55px;
   border-radius: 7px;
 }
-body article .button a {
+article .button a {
   color: #f2f2f2;
   text-decoration: none;
   font-weight: 400;
   font-size: 19.2px;
 }
-body article .button a:hover {
+article .button a:hover {
   color: #D98555;
 }
-body picture .image {
+
+picture .image {
   display: var(--dispFlex);
   flex-direction: var(--ColFlex);
   margin: 24px;
@@ -109,14 +112,15 @@ body picture .image {
   height: 200px;
   border-radius: 10px;
 }
-body footer {
+
+footer {
   background-color: #082B59;
   display: var(--dispFlex);
   flex-direction: var(--ColFlex);
   padding: 0;
   gap: 10px;
 }
-body footer .p1 {
+footer .p1 {
   color: #f2f2f2;
   text-align: var(--centJust);
   font-family: "Lato";
@@ -126,7 +130,7 @@ body footer .p1 {
   line-height: 38px;
   margin: 5px;
 }
-body footer .p2 {
+footer .p2 {
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
@@ -136,22 +140,22 @@ body footer .p2 {
   color: white;
   margin: 5px;
 }
-body footer nav ul {
+footer nav ul {
   display: var(--dispFlex);
   flex-direction: var(--Rowflex);
   justify-content: var(--centJust);
   list-style-type: none;
   padding: 16px;
 }
-body footer nav ul li {
+footer nav ul li {
   color: #f2f2f2;
   margin: 16px;
 }
-body footer nav ul li a {
+footer nav ul li a {
   color: #f2f2f2;
   text-decoration: none;
 }
-body footer nav ul li a:hover {
+footer nav ul li a:hover {
   color: #D98555;
 }
 
