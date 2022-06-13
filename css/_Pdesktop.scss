@@ -1,0 +1,55 @@
+@media (min-width: 1280px) {
+
+    //variables-font
+    $mainFont: 'Lato';
+    $mainFstyle: normal;
+    $mainFweight: 400;
+    $mainFsize: 20px;
+    $headFont: 'Poppins';
+    $lineHeight: 40px;
+
+    //redefined variables
+    $widPerc: 100%;
+    $mainDim: 200px;
+    $mainSpace: 4px;
+    $tenDim: 10px;
+    $zeroSpace: 0;
+
+    .logo {
+        width: $mainDim + 32;
+        margin: $mainSpace * 4;
+    }
+
+    header {
+        display: var(--dispFlex);
+        flex-direction: var(--Rowflex);
+        justify-content: var(--spaceJust);
+    }
+
+    .menu ul {
+        margin: 91px $mainSpace * 4 $zeroSpace $mainSpace * 4;
+        justify-content: var(--endJust);
+    }
+
+    nav li {
+        margin: $mainSpace * 9;
+        padding-bottom: $zeroSpace;
+    }
+
+    article img {
+        width: $mainDim + 184;
+        height: $mainDim + 45;
+    }
+
+    h2 {
+        font-weight: $mainFweight + 300;
+        font-size: $mainFsize + 6.4;
+    }
+
+    .content {
+        grid-template-columns: $mainDim + 184 $mainDim + 184 $mainDim + 184;
+        grid-template-rows: $mainDim + 45 $mainDim + 45;
+        row-gap: $tenDim*5;
+        justify-content: var(--centJust);
+    }
+}

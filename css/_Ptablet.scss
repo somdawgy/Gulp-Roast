@@ -1,0 +1,35 @@
+
+@media (min-width: 834px) {
+    //redefined variables
+    $widPerc: 100%;
+    $mainDim: 200px;
+    $mainSpace: 4px;
+    $tenDim: 10px;
+    $zeroSpace: 0;
+
+    .logo {
+        width: $mainDim;
+    }
+
+    .menu ul {
+        flex-direction: var(--Rowflex);
+        justify-content: var(--centJust);
+    }
+
+    nav li {
+        margin: $mainSpace * 5;
+        padding-bottom: $zeroSpace;
+    }
+
+    article img {
+        width: $mainDim + 103;
+        height: $mainDim;
+    }
+
+    .content {
+        display: var(--dispGrid);
+        grid-template-columns: $mainDim + 103 $mainDim + 219;
+        grid-template-rows: repeat(3 mainDim + 103);
+        gap: $tenDim * 5;
+    }
+}

@@ -1,0 +1,37 @@
+//variables-color
+$backColor: white;
+$blueColor: #082B59;
+$orangeColor: #D98555;
+$brownColor: #59331D;
+$secondWhite: #f2f2f2;
+$boundColor: #5B6DCD;
+
+//variables-font
+$mainFont: 'Lato';
+$mainFstyle: normal;
+$mainFweight: 400;
+$mainFsize: 20px;
+$headFont: 'Poppins';
+$lineHeight: 40px;
+
+//css aligning variables
+:root {
+    --dispFlex: flex;
+    --dispBlock: block;
+    --dispGrid: grid;
+    --Rowflex: row;
+    --ColFlex: column;
+    --stretch: stretch;
+    --startJust: flex-start;
+    --centJust: center;
+    --spaceJust: space-between;
+    --aroundJust: space-around;
+    --endJust: flex-end;
+}
+
+//spacing
+$widPerc: 100%;
+$mainDim: 200px;
+$mainSpace: 4px;
+$tenDim: 10px;
+$zeroSpace: 0;
