@@ -97,14 +97,14 @@ article p {
 article img {
   display: var(--dispFlex);
   flex-direction: var(--ColFlex);
-  margin: 24px;
   align-items: var(--startJust);
   align-self: var(--stretch);
   padding: 0;
+  border-radius: 10px;
+  margin: 24px;
   gap: 10px;
   width: 279px;
   height: 200px;
-  border-radius: 10px;
 }
 
 footer {

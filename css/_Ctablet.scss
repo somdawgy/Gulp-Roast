@@ -1,0 +1,34 @@
+@media (min-width: 834px) {
+    //redefined variables
+    $widPerc: 100%;
+    $mainDim: 200px;
+    $mainSpace: 4px;
+    $tenDim: 10px;
+    $zeroSpace: 0;
+
+    .logo {
+        width: $mainDim;
+    }
+
+    .menu ul {
+        flex-direction: var(--Rowflex);
+        justify-content: var(--centJust);
+    }
+
+    nav li {
+        margin: $mainSpace * 5;
+        padding-bottom: $zeroSpace;
+    }
+
+    section {
+        margin: $mainSpace * 6;
+        display: var(--dispFlex);
+        flex-direction: var(--Rowflex);
+        justify-content: var(--spaceJust);
+    }
+
+    div img {
+        width: $mainDim + 160;
+        height: $mainDim + 121;
+    }
+}

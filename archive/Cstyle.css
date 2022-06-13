@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
-body{
+body {
   background-color: #FFFFFF;
   font-family: Lato;
   box-sizing: content-box;
@@ -10,25 +10,28 @@ body{
   padding: 5px;
 }
 
-header{
+header {
   background-color: #082B59;
   border: 10px solid #D98555;
   border-style: none none solid none;
 }
-.logo{
+
+.logo {
   display: block;
   margin: 0 auto;
   width: 194px;
   padding-bottom: 1rem;
 }
-.menu ul{
+
+.menu ul {
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 26px;
   list-style-type: none;
 }
-.menu ul a{
+
+.menu ul a {
   color: #F2F2F2;
   text-decoration: none;
   font-family: 'Lato';
@@ -37,58 +40,64 @@ header{
   font-size: 24px;
   line-height: 58px;
 }
-.menu ul a:hover{
+
+.menu ul a:hover {
   color: #D98555;
 }
+
 nav li {
   margin: 0 1rem;
   font-size: 18px;
   padding-bottom: 36px;
 }
 
-article{
-    margin: 24px;
+article {
+  margin: 24px;
 }
-h1{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 80px;
-    margin: 10px;
-  }
-article p{
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 19.2px;
-    line-height: 38px;
-    margin: 10px;
-  }
 
-.phone{
+h1 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 80px;
+  margin: 10px;
+}
+
+article p {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19.2px;
+  line-height: 38px;
+  margin: 10px;
+}
+
+.phone {
   color: #59331D;
 }
-  div img{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    border-radius: 10px;
-    margin: 32px;
-    gap: 10px;
-    width: 327px;
-    height: 200px;
-    
+
+div img {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 10px;
+  margin: 32px;
+  gap: 10px;
+  width: 327px;
+  height: 200px;
+
 }
 
-footer{
+footer {
   background-color: #082B59;
   display: flex;
   flex-direction: column;
   padding: 0px;
   gap: 10px;
 }
- .p1{
+
+.p1 {
   color: #F2F2F2;
   text-align: center;
   font-family: 'Lato';
@@ -98,79 +107,91 @@ footer{
   line-height: 38px;
   margin: 5px;
 }
-.p2{
-    font-family: 'Lato';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 38px;
-text-align: center;
-color: #FFFFFF;
-margin: 5px;
+
+.p2 {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 38px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 5px;
 }
-footer nav ul{
+
+footer nav ul {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   list-style-type: none;
   padding: 1rem;
 }
-footer nav ul a{
+
+footer nav ul a {
   color: #F2F2F2;
   text-decoration: none;
 }
-footer nav li{
+
+footer nav li {
   color: #F2F2F2;
 }
 
-a:hover{
+a:hover {
   color: #D98555;
 }
 
-@media (min-width: 834px){
-    .logo{
-        width: 200px;
-    }
-    .menu ul{
-        flex-direction: row;
-        justify-content: center;
-    }
-    nav li{
-        margin: 20px;
-        padding-bottom: 0;
-    }
-    section{
-      margin:24px;
-      display:flex;
-      flex-direction: row;
-      justify-content: space-between;
-    }
-    div img{
-      width: 360px;
-      height: 321px;
-    }
+@media (min-width: 834px) {
+  .logo {
+    width: 200px;
+  }
+
+  .menu ul {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  nav li {
+    margin: 20px;
+    padding-bottom: 0;
+  }
+
+  section {
+    margin: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  div img {
+    width: 360px;
+    height: 321px;
+  }
 }
 
-@media (min-width: 1280px){
-  .logo{
+@media (min-width: 1280px) {
+  .logo {
     width: 232px;
     margin: 16px;
-}
-header{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.menu ul{
-  margin: 91px 16px 0px 16px;
-  justify-content: flex-end;
-}
-nav li{
-  margin: 36px;
-  padding-bottom: 0;
-}
- div img{
-  width: 592px;
-  height: 446px;
- }
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .menu ul {
+    margin: 91px 16px 0px 16px;
+    justify-content: flex-end;
+  }
+
+  nav li {
+    margin: 36px;
+    padding-bottom: 0;
+  }
+
+  div img {
+    width: 592px;
+    height: 446px;
+  }
 }

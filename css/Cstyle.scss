@@ -1,12 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
-@import "Pvar"; //variables
-@import "Pmixin";//mixins
-@import "Pmobile";//mobile code
-@import "Ptablet";//tablet code
-@import "Pdesktop";//desktop code
-
-
-
-
+@import "Cvar"; //variables
+@import "Cmixin";//mixins
+@import "Cmobile";//mobile code
+@import "Ctablet";//tablet code
+@import "Cdesktop";//desktop code

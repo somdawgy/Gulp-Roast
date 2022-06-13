@@ -18,9 +18,9 @@
     line-height: $lineHigh;
 }
 
-@mixin Spacing($Margin, $Gap, $Width, $Height){
-  margin: $Margin;
-  gap: $Gap;
-  width: $Width;
-  height: $Height;
+@mixin Spacing($Margin, $Gap, $Width, $Height) {
+    margin: $Margin;
+    gap: $Gap;
+    width: $Width;
+    height: $Height;
 }
